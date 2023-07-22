@@ -37,6 +37,9 @@
     min-width: 133px;
     border: 1px solid var(--secondaryColor);
     padding: 12px 16px;
+    color: var(--secondaryColor);
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .head__searchIcon--black{

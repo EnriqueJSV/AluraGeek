@@ -1,5 +1,6 @@
 .info{
     margin-top: 1rem;
+    padding-bottom: calc(192px + 1rem); /* 192px del tamano height de la imagen + 1rem de espaciado entre secciones */
 }
 
 .info__img{

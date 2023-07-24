@@ -1,0 +1,65 @@
+.product{
+    margin-bottom: 2rem;
+}
+
+.product__boxTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    /* margin-bottom: 1rem; */
+}
+
+.product__title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product__boxLink{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product__link{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondaryColor);
+}
+
+.product__arrowIcon{
+    width: 10.67px;
+    height: 10.67px;
+    background: url(/assets/img/arrowIcon.svg);
+}
+
+.product__boxProducts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__oneBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.product__img{
+    max-height: 174px;
+    max-width: 160px;
+}
+
+.product__name{
+    font-size: 14px;
+}
+
+.product__price{
+    font-weight: bold;
+}
+
+.product__watchProduct{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondaryColor);
+}

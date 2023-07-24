@@ -1,0 +1,104 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EAF2FD;
+    margin: 0 -1rem;
+    padding: 1rem 0;
+}
+
+.form__logoBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.form__logo{
+    width: 50px;
+    height: 50px;
+    background: url(/assets/img/icon.svg) no-repeat center/contain; /*url - repeat - (position + size separados por "/") */
+}
+
+.form__logoText{
+    width: 130px;
+    height: 20px;
+    background: url(/assets/img/textIcon.svg) no-repeat center/contain;
+}
+
+.form__linksBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.form__inputsBox{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__textForm{
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.form__input, .form__textArea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-bottom: 1px solid #A2A2A2;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.form__span{
+    position: absolute;
+    left: 15px;
+    padding: 10px;
+    pointer-events: none;
+    color: #A2A2A2;
+    transition: 0.5s;
+}
+
+.form__textArea{
+    resize: none;
+    height: 80px;
+    transition: 0.5s;
+}
+
+.form__input:valid,
+.form__input:focus{
+    height: 40px;
+}
+
+.form__textArea:valid,
+.form__textArea:focus{
+    height: 100px;
+    padding-top: 20px;
+}
+
+.form__input:valid ~ span,
+.form__input:focus ~ span{
+    transform: translateY(-7px);
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+}
+
+.form__textArea:valid ~ span,
+.form__textArea:focus ~ span{
+    transform: translateY(-7px);
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+}
+
+.form__btn{
+    margin: 0.5rem 1rem;
+    padding: 12px 16px;
+    background-color: var(--secondaryColor);
+    color: #fff;
+}

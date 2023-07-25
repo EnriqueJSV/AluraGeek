@@ -7,3 +7,9 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 1rem 1rem;
 }
+
+@media screen and (min-width: 1440px) {
+    body{
+        margin: 1rem 8rem;
+    }
+}

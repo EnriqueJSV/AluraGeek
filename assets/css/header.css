@@ -24,6 +24,7 @@
 
 .head__input{
     display: none;
+    transition: 1s;
 }
 
 .head__searchIcon--gray{
@@ -31,6 +32,7 @@
     height: 24px;
     background: url(../img/searchIconGray.svg);
     display: none;
+    transition: 1s;
 }
 
 .head__btnLogin{
@@ -56,7 +58,6 @@
         border-radius: 20px;
         background-color: #F5F5F5;
         padding: 10px;
-        transition: 1s;
     }
 
     .head__input::placeholder{
@@ -80,5 +81,38 @@
 
     .head__searchIcon--black{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .head__icon{
+        width: 40px;
+        height: 30px;
+        background: url(../img/icon.svg) no-repeat center/contain;
+    }
+
+    .head__titleIcon{
+        width: 126px;
+        height: 18.5px;
+        background: url(../img/textIcon.svg) no-repeat center/contain;
+        margin-left: -5px;
+    }
+
+    .head__input{
+        /* width: 393px; */
+        width: 200px;
+    }
+
+    .head__input:focus{
+        width: 450px;
+    }
+
+    .head__searchIcon--gray{
+        /* left: 680px; */
+        left: 480px;
+    }
+
+    .head__input:focus ~ span{
+        left: calc(680px + 60px); /*680px del tamano focus del input mas donde va a quedar acomodado*/
     }
 }

@@ -47,3 +47,38 @@
     height: 24px;
     background: url(../img/searchIcon.svg);
 }
+
+
+@media screen and (min-width: 768px) {  
+    .head__input{
+        display: inline-block;
+        margin-left: 1rem;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        padding: 10px;
+        transition: 1s;
+    }
+
+    .head__input::placeholder{
+        color: #A2A2A2;
+    }
+
+    .head__input:focus{
+        width: 300px;
+    }
+
+    .head__input:focus ~ span{
+        left: calc(300px + 120px); /*300px del tamano focus del input mas donde va a quedar acomodado*/
+    }
+
+    .head__searchIcon--gray{
+        display: inline-block;
+        position: absolute;
+        left: 300px;
+        top: 26px;
+    }
+
+    .head__searchIcon--black{
+        display: none;
+    }
+}

@@ -36,3 +36,26 @@
     color: #fff;
     width: fit-content;
 }
+
+@media screen and (min-width: 768px) {
+    .info{
+        padding-bottom: calc(360px + 1rem);
+    }
+
+    .info__img{
+        height: 360px;
+    }
+
+    .info__textBox{
+        padding-top: 200px;
+    }
+
+    .info__title{
+        font-size: 52px;
+    }
+
+    .info__subtitle{
+        font-weight: bold;
+        font-size: 22px;
+    }
+}

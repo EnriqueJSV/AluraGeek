@@ -59,3 +59,19 @@
         font-size: 22px;
     }
 }
+
+@media screen and (min-width: 1440px){
+    .info{
+        padding-bottom: calc(520px + 4rem);
+    }
+
+    .info__img{
+        margin: 0 -8rem;
+        height: 520px;
+    }
+
+    .info__textBox{
+        padding-top: 340px;
+        gap: 1rem;
+    }
+}

@@ -122,3 +122,29 @@
         left: 290px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .form{
+        margin: 0 -8rem;
+    }
+
+    .form__LinksLogoBox{
+        display: flex;
+        flex-direction: row;
+        padding-left: 8rem;
+    }
+
+    .form__logoBox{
+        position: absolute;
+    }
+
+    .form__linksBox{
+        padding-left: 16rem;
+        padding-right: 8rem;
+        align-items: flex-start;
+    }
+
+    .form__span{
+        left: 800px;
+    }
+}

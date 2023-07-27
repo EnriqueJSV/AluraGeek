@@ -45,6 +45,10 @@
     margin-top: 1rem;
 }
 
+.product__oneBox:nth-of-type(n+4) ~ div{ /*Esto selecciona los hermanos a partir del 4 porque asi se especifico*/
+    display: none;
+}
+
 .product__img{
     max-height: 174px;
     max-width: 160px;
@@ -62,4 +66,10 @@
     font-size: 14px;
     font-weight: bold;
     color: var(--secondaryColor);
+}
+
+@media screen and (min-width: 1440px) {
+    .product__oneBox:nth-of-type(n+4) ~ div{
+        display: flex;
+    }
 }

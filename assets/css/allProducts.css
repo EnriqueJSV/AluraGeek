@@ -79,3 +79,34 @@
 .products__price{
     font-weight: bold;
 }
+
+@media screen and (min-width: 768px) {
+    .products__titleBox{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .products__box{
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    /* .products__oneBox{
+        margin: 0.5rem;
+    } */
+}
+
+@media screen and (min-width: 1440px) {
+    .products{
+        margin: 0 -8rem;
+    }
+
+    .product__container{
+        padding: 0 8rem;
+    }
+
+    .products__box{
+        justify-content: space-between;
+    }
+}

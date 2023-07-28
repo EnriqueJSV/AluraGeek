@@ -91,10 +91,6 @@
         justify-content: flex-start;
         gap: 2rem;
     }
-
-    /* .products__oneBox{
-        margin: 0.5rem;
-    } */
 }
 
 @media screen and (min-width: 1440px) {

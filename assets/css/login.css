@@ -34,6 +34,10 @@
     width: 110px;
 }
 
+.login__btn{
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1440px) {
     .login{
         margin: 0 -8rem;

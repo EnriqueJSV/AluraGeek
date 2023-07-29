@@ -1,0 +1,90 @@
+.add{
+    background-color: #F5F5F5;
+    padding: 1rem;
+    margin: 0 -1rem;
+}
+
+.add__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.add__title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.add__inputsBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.add__input, .add__textarea{
+    height: 40px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.add__span, .add__span--textarea{
+    color: #A2A2A2;
+    position: relative;
+    padding: 10px;
+    bottom: 60px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.add__textarea{
+    height: 72px;
+    resize: none;
+    transition: 0.5s;
+}
+
+.add__span--textarea{
+    bottom: 100px;
+    margin-bottom: -2rem;
+}
+
+.add__input:valid,
+.add__input:focus{
+    height: 50px;
+}
+
+/*Se pone el + para que no afecte a los inputs siguentes*/
+.add__input:valid + span, 
+.add__input:focus + span{
+    transform: translateY(-7px);
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+}
+
+.add__textarea:valid,
+.add__textarea:focus{
+    padding: 20px 10px;
+}
+
+
+.add__textarea:valid ~ span,
+.add__textarea:focus ~ span{
+    transform: translateY(-30px);
+    font-size: 0.7rem;
+    padding-bottom: 7px;
+}
+
+.add__btn{
+    background-color: var(--secondaryColor);
+    padding: 16px;
+    color: #FFF;
+}
+
+.add__btn:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    .add{
+        margin: 0 -8rem;
+        padding: 2rem 8rem;
+    }
+}

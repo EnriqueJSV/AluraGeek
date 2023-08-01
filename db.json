@@ -1,22 +1,40 @@
 {
-    "product": [
-        {
-            "name": "Taza StarWars",
-            "imgUrl": "/assets/img/sw1.png",
-            "price": "$20,00",
-            "id": "000001"
-        },
-        {
-            "name": "Taza StarWars",
-            "imgUrl": "/assets/img/sw2.png",
-            "price": "$20,00",
-            "id": "000002"
-        },
-        {
-            "name": "Taza StarWars",
-            "imgUrl": "/assets/img/sw3.png",
-            "price": "$20,00",
-            "id": "000003"
-        }
-    ]
+  "product": [
+    {
+      "name": "Taza StarWars",
+      "imgUrl": "/assets/img/sw1.png",
+      "price": "$20,00",
+      "id": "000001"
+    },
+    {
+      "name": "Taza StarWars",
+      "imgUrl": "/assets/img/sw2.png",
+      "price": "$20,00",
+      "id": "000002"
+    },
+    {
+      "name": "Taza StarWars",
+      "imgUrl": "/assets/img/sw3.png",
+      "price": "$20,00",
+      "id": "000003"
+    },
+    {
+      "imgUrl": "/assets/img/sw4.png",
+      "name": "Producto XYZ",
+      "price": "$50.00",
+      "id": "rRW4CoK"
+    },
+    {
+      "imgUrl": "/assets/img/sw5.png",
+      "name": "Producto XYZ",
+      "price": "$50.00",
+      "id": "l3KiaKj"
+    },
+    {
+      "imgUrl": "/assets/img/sw6.png",
+      "name": "Producto XYZ",
+      "price": "$70.00",
+      "id": "QTTGH6C"
+    }
+  ]
 }

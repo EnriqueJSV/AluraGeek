@@ -27,5 +27,3 @@ clientServices.productList().then( (data) => {
     });
 })
 .catch(error => console.log(error));
-
-

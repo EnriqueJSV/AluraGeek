@@ -41,17 +41,17 @@
 
         <!-- Agregar -->
         <section class="add">
-            <form action="" class="add__form">
+            <form class="add__form" data-formAdd>
                 <legend class="add__title">Agregar nuevo producto</legend>
 
                 <div class="add__inputsBox">
-                    <input type="text" class="add__input" required>
+                    <input type="text" class="add__input" required data-url>
                     <span class="add__span">URL de la imagen</span>
                     <input type="text" class="add__input" required>
                     <span class="add__span">Categoría</span>
-                    <input type="text" class="add__input" required>
+                    <input type="text" class="add__input" required data-name>
                     <span class="add__span">Nombre del producto</span>
-                    <input type="text" class="add__input" required>
+                    <input type="text" class="add__input" required data-price>
                     <span class="add__span">Precio del producto</span>
                 </div>
 
@@ -103,6 +103,6 @@
         <p>2023</p>
     </footer>
 
-
+    <script type="module" src="/assets/controllers/createProduct_controller.js"></script>
 </body>
 </html>

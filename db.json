@@ -68,7 +68,14 @@
       "name": "Darth Vader",
       "price": "$40.00",
       "category": "Star Wars",
-      "id": "QYtorsO"
+      "id": "6Wg-WPY"
+    },
+    {
+      "imgUrl": "/assets/img/diver2.png",
+      "name": "Varios",
+      "price": "$10.00",
+      "id": "AxJoED3",
+      "category": "Diversos"
     }
   ],
   "adminUser": [

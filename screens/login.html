@@ -41,11 +41,13 @@
     <main>
 
         <!-- Login -->
-        <section class="login">
-            <h3 class="login__title">Iniciar Sesión</h3>
-            <input type="email" class="login__input" placeholder="Escriba su correo electrónico" required>
-            <input type="password" class="login__input" placeholder="Escriba su contraseña" required>
-            <button class="login__btn">Entrar</button>
+        <section>
+            <form class="login" data-login>
+                <h3 class="login__title">Iniciar Sesión</h3>
+                <input type="email" class="login__input" placeholder="Escriba su correo electrónico" required data-userEmail>
+                <input type="password" class="login__input" placeholder="Escriba su contraseña" required data-password>
+                <button class="login__btn">Entrar</button>
+            </form>
         </section>
 
         <!-- Form -->
@@ -90,6 +92,6 @@
     </footer>
 
 
-
+<script type="module" src="/assets/controllers/login_controller.js"></script>
 </body>
 </html>

@@ -56,5 +56,12 @@
       "id": "FNFIL9P",
       "category": "Consolas"
     }
+  ],
+
+  "adminUser": [
+    {
+      "email": "admin@alurageek.com",
+      "password": "admin"
+    }
   ]
 }

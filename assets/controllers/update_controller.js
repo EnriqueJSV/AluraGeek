@@ -8,12 +8,14 @@ const getInfo = async () => {
     const id = url.searchParams.get('id');
 
     const urlImg = document.querySelector('[data-url]');
+    const category = document.querySelector('[data-category]');
     const name = document.querySelector('[data-name]');
     const price = document.querySelector('[data-price]');
 
     try{
         const product = await clientServices.productData(id);
         urlImg.value = product.imgUrl;
+        category.value = product.category;
         name.value = product.name;
         price.value = product.price;
     }catch(error){
@@ -29,11 +31,12 @@ form.addEventListener('submit', (event) => {
     const ids = url.searchParams.get('id');
 
     const imgUrl = document.querySelector('[data-url]').value;
+    const category = document.querySelector('[data-category]').value;
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
     
 
-    clientServices.productUpdate(imgUrl, name, price, ids).then(() => {
+    clientServices.productUpdate(imgUrl, name, price, category, ids).then(() => {
         window.location.href = '../screens/allProducts.html';
     });
 })

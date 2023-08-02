@@ -6,11 +6,12 @@ const form = document.querySelector('[data-formAdd]');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const url = document.querySelector('[data-url]').value;
+    const category = document.querySelector('[data-category]').value;
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
     const id = "";
 
-    clientServices.createProduct(url, name, price, id)
+    clientServices.createProduct(url, name, price, id, category)
     .then( response => {
         window.location.href = "../screens/index.html"
         console.log(response)

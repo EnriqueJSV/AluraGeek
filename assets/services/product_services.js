@@ -2,13 +2,13 @@
 const productList = () => fetch('http://localhost:3000/product').then(response => response.json()).catch(error => console.log(error));
 
 // POST
-const createProduct = (imgUrl, name, price, id) => {
+const createProduct = (imgUrl, name, price, id, category) => {
     return fetch('http://localhost:3000/product',{
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({imgUrl, name, price, id})
+        body: JSON.stringify({imgUrl, name, price, id, category})
     }).then(response => {
         if(response.ok){
             return response.body
@@ -29,13 +29,13 @@ const productData = (id) => {
     return fetch(`http://localhost:3000/product/${id}`).then(response => response.json());
 }
 
-const productUpdate = (imgUrl, name, price, id) => {
+const productUpdate = (imgUrl, name, price, category, id) => {
     return fetch(`http://localhost:3000/product/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({imgUrl, name, price})
+        body: JSON.stringify({imgUrl, name, price, category})
     }).then(response => response).catch(error => console.log(error));
 }
 

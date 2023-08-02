@@ -16,12 +16,22 @@ const newProduct = (name, imgUrl, price) => {
 }
 
 // get the product's div
-const products = document.querySelector('[data-products]');
+const getDiv = (category) => {
+    let products = "";
+    if(category == "Star Wars"){
+        return products = document.querySelector('[data-productsStarWars]');
+    }else if(category == "Consolas"){
+        return products = document.querySelector('[data-productsConsolas]');
+    }else if(category == "Diversos"){
+        return products = document.querySelector('[data-productsDiversos]');
+    }   
+}
 
 // add each product in the code
 clientServices.productList().then( (data) => {
     console.log(data);
-    data.forEach( ({name, imgUrl, price}) => {
+    data.forEach( ({name, imgUrl, price, category}) => {
+        const products = getDiv(category);
         const addProduct = newProduct(name, imgUrl, price);
         products.appendChild(addProduct);
     });

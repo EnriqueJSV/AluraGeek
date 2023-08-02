@@ -23,9 +23,11 @@ const showProduct = (imgUrl, name, price, id) => {
     btnDelete.addEventListener('click', () =>{
         const ids = btnDelete.id;
         console.log(`clic a ${ids}`);
-        clientServices.deleteProduct(ids).then(response => {
-            console.log(response);
-        }).catch(error => console.log(error));
+        if(window.confirm("Realmente desea eliminar este producto?")){
+            clientServices.deleteProduct(ids).then(response => {
+                console.log(response);
+            }).catch(error => console.log(error));
+        }
     })
 
 

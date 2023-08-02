@@ -18,27 +18,3 @@ form.addEventListener('submit', (event) => {
     })
     .catch(error => {console.log(error)})
 })
-
-
-// get the higher id and return the string of it
-// clientServices.productList().then( (data) => {
-//     const getId = [];
-//     data.forEach( ({id}) => {
-//             getId.push(id)
-//         })
-//     const max = Math.max(...getId)
-//     if(max < 9){
-//         return "00000" + (max+1)
-//     }else if(max < 99){
-//         return "0000" + (max+1)
-//     }else if(max < 999){
-//         return "000" + (max+1)
-//     }else if(max < 9999){
-//         return "00" + (max+1)
-//     }else if(max < 99999){
-//         return "0" + (max+1)
-//     }else if(max < 999999){
-//         return (max+1)
-//     }
-// })
-    

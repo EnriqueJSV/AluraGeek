@@ -36,13 +36,6 @@
       "category": "Star Wars"
     },
     {
-      "imgUrl": "/assets/img/sw6.png",
-      "name": "Producto XYZ",
-      "price": "$70.00",
-      "category": "Star Wars",
-      "id": "QTTGH6C"
-    },
-    {
       "imgUrl": "/assets/img/consolas1.png",
       "name": "Control Xbox",
       "price": "$70.00",
@@ -62,6 +55,20 @@
       "price": "$200.00",
       "category": "Consolas",
       "id": "O1bBJOL"
+    },
+    {
+      "imgUrl": "/assets/img/diver1.png",
+      "name": "Varios",
+      "price": "$30.00",
+      "id": "g4zZsXv",
+      "category": "Diversos"
+    },
+    {
+      "imgUrl": "/assets/img/sw6.png",
+      "name": "Darth Vader",
+      "price": "$40.00",
+      "category": "Star Wars",
+      "id": "QYtorsO"
     }
   ],
   "adminUser": [

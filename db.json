@@ -1,9 +1,9 @@
 {
   "product": [
     {
-      "name": "Taza StarWars",
       "imgUrl": "/assets/img/sw1.png",
-      "price": "$20,00",
+      "name": "Taza StarWars",
+      "price": "$15,00",
       "id": "000001"
     },
     {

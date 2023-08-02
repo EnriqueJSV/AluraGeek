@@ -24,8 +24,25 @@ const deleteProduct = (id) => {
     })
 }
 
+// PUT
+const productData = (id) => {
+    return fetch(`http://localhost:3000/product/${id}`).then(response => response.json());
+}
+
+const productUpdate = (imgUrl, name, price, id) => {
+    return fetch(`http://localhost:3000/product/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({imgUrl, name, price})
+    }).then(response => response).catch(error => console.log(error));
+}
+
 export const clientServices = {
     productList,
     createProduct,
-    deleteProduct
-}
+    deleteProduct,
+    productData,
+    productUpdate
+};

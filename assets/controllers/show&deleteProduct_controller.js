@@ -8,7 +8,7 @@ const showProduct = (imgUrl, name, price, id) => {
     <img src=${imgUrl} alt="imagen producto" class="products__img">
     <div class="products__btnBox">
         <button class="products__delete" id=${id} data-btnDelete></button>
-        <a href="addProduct.html?id=${id}" class="products__edit" data-btnEdit></a>
+        <a href="editProduct.html?id=${id}" class="products__edit" data-btnEdit></a>
     </div>
     <div class="products__textBox">
         <h4 class="products__name">${name}</h4>

@@ -55,12 +55,20 @@
     width: 24px;
     height: 24px;
     background: url(/assets/img/deleteIcon.svg) no-repeat center/contain;
+    transition: 0.5s;
 }
 
 .products__edit{
     width: 24px;
     height: 24px;
     background: url(/assets/img/editIcon.svg) no-repeat center/contain;
+    transition: 0.5s;
+}
+
+.products__delete:hover, 
+.products__edit:hover{
+    cursor: pointer;
+    transform: scale(1.25);
 }
 
 .products__textBox{

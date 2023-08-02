@@ -45,13 +45,13 @@
                     <h3 class="products__title">Todos los productos</h3>
                     <a href="/screens/addProduct.html" class="products__btnAdd">Agregar producto</a>
                 </div>
-                <div class="products__box">
+                <div class="products__box" data-allProducts>
                     <!-- SW -->
-                    <div class="products__oneBox">
+                    <!-- <div class="products__oneBox">
                         <img src="/assets/img/sw1.png" alt="imagen producto" class="products__img">
                         <div class="products__btnBox">
-                            <button class="products__delete"></button>
-                            <button class="products__edit"></button>
+                            <button class="products__delete" data-btnDelete></button>
+                            <a href="addProduct.html" class="products__edit" data-btnEdit></a>
                         </div>
                         <div class="products__textBox">
                             <h4 class="products__name">Producto XYZ</h4>
@@ -118,10 +118,10 @@
                             <h4 class="products__price">$60,00</h4>
                             <p class="products__id">#1111111</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Consolas -->
-                    <div class="products__oneBox">
+                    <!-- <div class="products__oneBox">
                         <img src="/assets/img/consolas1.png" alt="imagen producto" class="products__img">
                         <div class="products__btnBox">
                             <button class="products__delete"></button>
@@ -132,7 +132,7 @@
                             <h4 class="products__price">$60,00</h4>
                             <p class="products__id">#1111111</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="products__oneBox">
                         <img src="/assets/img/consolas2.png" alt="imagen producto" class="products__img">
                         <div class="products__btnBox">
@@ -257,7 +257,7 @@
                     </div>
                     <div class="products__oneBox">
                         <img src="/assets/img/diver6.png" alt="imagen producto" class="products__img">
-                        <div class="products__btnBox">
+                        <div class="products__btnBox" data-btnBox>
                             <button class="products__delete"></button>
                             <button class="products__edit"></button>
                         </div>
@@ -311,6 +311,7 @@
     <p>Desarrollado por Enrique Solorzano</p>
     <p>2023</p>
 </footer>
-    
+
+<script type="module" src="/assets/controllers/show&deleteProduct_controller.js"></script>    
 </body>
 </html>

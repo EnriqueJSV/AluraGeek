@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
 
     clientServices.createProduct(url, name, price, id, category)
     .then( response => {
-        window.location.href = "../screens/index.html"
+        window.location.href = "../screens/allProducts.html"
         console.log(response)
     })
     .catch(error => {console.log(error)})

@@ -55,9 +55,15 @@
       "price": "$700.00",
       "id": "FNFIL9P",
       "category": "Consolas"
+    },
+    {
+      "imgUrl": "/assets/img/consolas3.png",
+      "name": "SNES",
+      "price": "$200.00",
+      "category": "Consolas",
+      "id": "O1bBJOL"
     }
   ],
-
   "adminUser": [
     {
       "email": "admin@alurageek.com",
